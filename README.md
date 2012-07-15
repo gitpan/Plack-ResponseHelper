@@ -42,7 +42,7 @@ Or if your app is even less sophisticated, just
 
 A very thin layer that abstracts Plack's specifics.
 
-Bundled with [Plack::ResponseHelper::JSON](http://search.cpan.org/perldoc?Plack::ResponseHelper::JSON), [Plack::ResponseHelper::Text](http://search.cpan.org/perldoc?Plack::ResponseHelper::Text).
+Bundled with [Plack::ResponseHelper::Attachment](http://search.cpan.org/perldoc?Plack::ResponseHelper::Attachment), [Plack::ResponseHelper::JSON](http://search.cpan.org/perldoc?Plack::ResponseHelper::JSON), [Plack::ResponseHelper::Text](http://search.cpan.org/perldoc?Plack::ResponseHelper::Text).
 More coming soon!
 
 # METHODS
@@ -83,6 +83,8 @@ this is achieved by passing an `$init` parameter:
 that returns some dynamic data, or just a hashref with configuration options.
 
     package Plack::ResponseHelper::My::Helper;
+    use strict;
+    use warnings;
 
     sub helper {
         my $init = shift;

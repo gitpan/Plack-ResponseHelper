@@ -1,3 +1,4 @@
+changes
 eg/app.psgi
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
@@ -8,6 +9,7 @@ inc/Module/Install/Metadata.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/Plack/ResponseHelper.pm
+lib/Plack/ResponseHelper/Attachment.pm
 lib/Plack/ResponseHelper/JSON.pm
 lib/Plack/ResponseHelper/Text.pm
 Makefile.PL
@@ -15,6 +17,7 @@ MANIFEST			This list of files
 META.yml
 README.md
 t/00_compile.t
+t/attachment.t
 t/basic.t
 t/json.t
 t/text.t

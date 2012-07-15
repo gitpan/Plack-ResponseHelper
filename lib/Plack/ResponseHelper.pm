@@ -93,7 +93,7 @@ Or if your app is even less sophisticated, just
 
 A very thin layer that abstracts Plack's specifics.
 
-Bundled with L<Plack::ResponseHelper::JSON>, L<Plack::ResponseHelper::Text>.
+Bundled with L<Plack::ResponseHelper::Attachment>, L<Plack::ResponseHelper::JSON>, L<Plack::ResponseHelper::Text>.
 More coming soon!
 
 =head1 METHODS
@@ -134,6 +134,8 @@ C<< $init >> can be anything that PX::RH::My::Helper supports, e.g. a code ref
 that returns some dynamic data, or just a hashref with configuration options.
 
     package Plack::ResponseHelper::My::Helper;
+    use strict;
+    use warnings;
 
     sub helper {
         my $init = shift;
